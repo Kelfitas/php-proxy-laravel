@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  web:
+    image: bitnami/php-fpm:latest
+    volumes:
+      - .:/var/www/
+    ports:
+      - 9000:9000
